@@ -1,0 +1,62 @@
+site_name: Attack Surface Management
+site_url: 
+theme:
+  features:
+    - navigation.tabs
+    - navigation.expand
+  name: material
+  theme:
+    features:
+      - navigation.tabs
+      - navigation.expand
+    name: material
+    logo: img/falcon.png
+    palette:
+      - media: "(prefers-color-scheme: light)"
+        scheme: slate
+        primary: indigo
+        toggle:
+          icon: material/toggle-switch-off-outline
+          name: Switch to dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: default
+        primary: indigo
+        toggle:
+          icon: material/toggle-switch
+          name: Switch to light mode
+    icon:
+      repo: fontawesome/brands/github
+nav:
+  - Getting started:
+    - index: index.md
+    - Features: get-started/features.md
+    - Installation: get-started/install.md
+    - Usage: get-started/usage.md
+    - Running: get-started/running.md
+    - Asset exclusion: get-started/exclusion.md
+    - Configuration: get-started/config.md
+    - Reporting: get-started/report.md
+    - Project contribution: get-started/contribution.md
+    - License: get-started/license.md
+  - FAQ:
+    - faq: faq/faq.md
+  - Changelog:
+    - Attack Surface Management: releases.md
+  - Credits:
+    - Contributors: credits.md
+  - Other Products :
+    - Subdomain Discovery: API/subdomain_discovery.md
+    - Email Discovery: API/email_discovery.md
+    - Leaked Credentials: API/leaked_credentials.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.superfences
+  - admonition
+  - attr_list
+repo_url: https://github.com/Deepanjalkumar/AttackSurfaceManagement-DOCS
+repo_name: AttackSurfaceManagement-DOCS
+
+copyright: MIT Licence & copy Deepanjal kumar / Operation Falcon
